@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@400;500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@400;500&family=Roboto&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to bottom, #072f64 26%, #176f75 70%);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: rgb(126,15,237);
+    background: linear-gradient(0deg, rgb(24, 152, 161) 0%, rgb(72, 88, 179) 100%);
+    width: 32%;
+    min-width: 30%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 0 15px rgb(9, 17, 129);
+}
+.container h1{
+    text-align: center;
+    color: #072f64;
+}
+.container i{
+    color: #1c1c1d;
+    width: 30px;
+   padding-right: 10px;
+}
+.searchnox{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+.searchnox input{
+    width: 20vw;
+    height: 10px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    border: 2px solid rgb(24, 152, 161);
+    background-color: rgb(130, 185, 189);
+}
+.searchnox button{
+    height: 33px;
+    width: 7vw;
+    font-size: 20px;
+    background-color: rgb(17, 78, 119);
+    border-radius: 5px;
+    border: 2px solid rgb(31, 101, 182);
+    color: #ffff;
+    transition-duration: 0.4s;
+    box-shadow:2px 3px 3px black;
+}
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    
+}
+.info img{
+    width: 15vw;
+    border-radius :10px ;
+    padding-left: 10px;
+}
+
+.poster{
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating img{
+    width: 1.2em;
+}
+
+.rating h4{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #a0a0a0;
+    margin: 0.6em 0;
+    font-weight: 300;
+}
+.director{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.genre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.genre div{
+    border: 1px solid #a0a0a0;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 0.4em;
+    font-weight: 300;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 1.2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: center;
+    color: #1c1c1d;
+    font-family: 'Rubik', sans-serif;
+}
+
+.msg{
+    text-align: center;
+}
+.searchnox input:hover{
+    background-color: #176f75;
+}
+.searchnox button:hover{
+    background-color: rgb(15, 9, 92);
+}
+h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+}
